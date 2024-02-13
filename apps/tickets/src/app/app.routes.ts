@@ -25,9 +25,7 @@ export const APP_ROUTES: Routes = [
       {
         path: 'flight-booking',
         loadChildren: () =>
-          import('@flight-demo/tickets/feature-booking').then(
-            (m) => m.FLIGHT_BOOKING_ROUTES
-          ),
+          import('@flight-demo/tickets/feature-booking')
       },
       {
         path: 'next-flights',
